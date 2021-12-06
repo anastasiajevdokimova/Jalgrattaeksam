@@ -1,0 +1,346 @@
+/*LOGIN FORM*/
+
+* {
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.log {
+    width: 400px;
+    margin: 5% auto;
+    background-image: url('https://i.pinimg.com/originals/18/43/c6/1843c6f65c6a240fa4d368db59499d80.jpg');
+    border-right: 10px solid #da6d00;
+    border-left: 5px solid #da6d00;
+    border-top: 5px solid #da6d00;
+    border-bottom: 5px solid #da6d00;
+    padding: 30px 0;
+}
+.log h2 {
+    text-align: center;
+    color: #da6d00;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.log .input-cont {
+    position: relative;
+    margin: 0 50px 60px;
+}
+.log .input-cont:last-of-type {
+    margin-bottom: 30px;
+}
+.log .input-cont input {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    color: #212121;
+    font-size: 22px;
+    font-weight: 400;
+    background: none;
+    border: none;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+    color: white;
+}
+.log .input-cont input:focus {
+    outline: none;
+}
+.log .input-cont label {
+    position: absolute;
+    color: #866b45;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.log .input-cont input:focus + label {
+    margin-top: -30px;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    color: #866b45;
+}
+.log .border1,
+.log .border2 {
+    position: absolute;
+    height: 1px;
+    background-color: #866b45;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.log .border1::after,
+.log .border1::before,
+.log .border2::after,
+.log .border2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.log .border1::after,
+.log .border2::after {
+
+    right: 50%;
+    background-color: #da6d00;
+}
+.log .border1::before,
+.log .border2::before {
+    left: 50%;
+    background-color: #da6d00;
+}
+.log .input-cont input:focus ~ .border1::after,
+.log .input-cont input:focus ~ .border1::before,
+.log .input-cont input:focus ~ .border2::after,
+.log .input-cont input:focus ~ .border2::before {
+    width: 50%;
+}
+.log .check,
+.log a {
+    float: left;
+    width: calc(50% - 50px);
+    display: block;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.log .check {
+    margin-left: 50px;
+}
+.log a {
+    text-align: right;
+    text-decoration: none;
+    color: #da6d00;
+}
+.log a:hover {
+    text-decoration: underline;
+    color: #da6d00;
+}
+.log form input[type="submit"] {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 5px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #da6d00;
+    background-color: white;
+    border: 2px solid #da6d00;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.log form input[type="submit"]:focus {
+    outline: none;
+}
+.log form input[type="submit"]:hover {
+    background-color: #da6d00;
+    color: white;
+}
+
+/*MENU STYLE*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    border-bottom: 3px solid #FFA500;
+    color: #FFA500;
+}
+
+/*REGISTREERIMINE*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.reg {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*justify-content: center;*/
+    height: 90vh;
+}
+.reg-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.reg-input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    border-radius: 0px;
+    padding: 8px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: unset;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 0.1rem solid #dac8a8;
+    background: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.teoo-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.reg-input[type="text"]:hover, .teoo-input[type="text"]:hover {
+    border-color: #FFA500;
+}
+.reg-input[type="text"]:focus, .teoo-input[type="text"]:focus {
+    box-shadow: 0 0 0 2px rgb(189, 122, 2);
+    border-color: #FFA500;
+}
+.reg-input[type="text"]:disabled, .teoo-input[type="text"]:disabled {
+    background: #f6f8ff;
+    cursor: not-allowed;
+    opacity: 0.9;
+    border-color: #f8ead1;
+}
+.teoo-input[type="text"]{
+    width: 50%;
+    border-radius: 0px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0.1rem solid #dac8a8;
+    background: #fff;
+}
+.teoo-input[type="submit"]{
+    width: 50%;
+    border-radius: 0px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: 0.1rem solid #da6d00;
+    background: #da6d00;
+    color: #fff;
+    position: relative;
+}
+.reg-input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    border-radius: 0px;
+    padding: 8px 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: unset;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 0.1rem solid #da6d00;
+    background: #da6d00;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.reg-input[type="submit"]:hover, .btnlogout:hover {
+    border-color: #da6d00;
+}
+.reg-input[type="submit"]:focus, .btnlogout:focus {
+    box-shadow: 0 0 0 3px rgb(189, 122, 2);
+    border-color: #da6d00;
+}
+.reg-input[type="submit"]:disabled, .btnlogout:disabled {
+    background: #f6f8ff;
+    cursor: not-allowed;
+    opacity: 0.9;
+    border-color: #f8ead1;
+}
+
+.btnlogout{
+    border-radius: 0px;
+    padding: 8px 10px;
+    margin: 0;
+    cursor: pointer;
+    border: 0.1rem solid #da6d00;
+    background: #da6d00;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.korras, .vormista{
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 0px;
+    padding: 8px;
+    background-color: #58ad04;
+}
+.mkorras{
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 0px;
+    padding: 8px;
+    background-color: #ad0404;
+}
+
+/*LUBADELEHT TABEL*/
+.tulemused{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+.tulemused td, .tulemused th{
+    border: 1px solid #d9c3ae;
+    padding: 8px;
+}
+.tulemused tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.tulemused tr:hover{
+    background-color: #d9c3ae;
+}
+.tulemused th{
+    border: 1px solid #f2f2f2;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #da6d00;
+    color: white;
+}
